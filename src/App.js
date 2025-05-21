@@ -6,11 +6,11 @@ import HomeSec from './Component/HomeSec';
 function App() {
   return (
     <>
-<BrowserRouter>
-<Routes>
-  <Route path='/' element={<HomeSec/>}/>
-</Routes>
-</BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<HomeSec />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
