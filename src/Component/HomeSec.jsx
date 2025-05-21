@@ -3,6 +3,7 @@ import Schedule from './Schedule';
 import Footer from './Footer';
 import BookStole from './BookStole';
 import Imageslider from './Imageslider';
+import Event from './Event';
 
 function HomeSec() {
   return (
@@ -13,15 +14,16 @@ function HomeSec() {
 
 
 
-      <div className='darkcolorbg py-3'>
+     
+   <Event/>
+
+      {/* date & time start */}
+       <div className='darkcolorbg py-3'>
         <div className='position-relative '>
           <h1 className=' text-white text-center fw-bold py-2  borderbtm'><span className='orangecolor'>Businessotsav</span> Exhibition 2025 🔊</h1>
         </div>
       </div>
 
-
-
-      {/* date & time start */}
       <div className="darkcolorbg py-3 pb-5">
         <div className="container bglightbluecolor my-2">
           <div className="row g-3 py-2 d-flex justify-content-center">
@@ -57,6 +59,7 @@ function HomeSec() {
         </div>
       </div>
       {/* date & time end */}
+   
       <Imageslider/>
       <Schedule/>
       <BookStole/>

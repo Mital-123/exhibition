@@ -143,8 +143,7 @@
   height: 4px;
   width: 10%;
   background: linear-gradient(to right, #0091b6, #d7f6fc);
-  /* Customize colors */
-
+ 
 }
 
 /* homesec end */
@@ -343,3 +342,133 @@
 }
 
 /* image carousel end */
+
+
+/* eventname start */
+/* Event start */
+.event-info {
+  background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+  padding: 40px 0;
+  position: relative;
+}
+ 
+.event-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  /* background: linear-gradient(to right, #3498db, #0a3d62, #3498db); */
+}
+ 
+.organizers {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  text-align: center;
+}
+ 
+.org-item {
+  flex: 1;
+  min-width: 280px;
+  margin: 15px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  border: 1px solid #eaeaea;
+  position: relative;
+  overflow: hidden;
+}
+ 
+.org-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #3498db, #0a3d62);
+}
+ 
+.org-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+ 
+.org-logo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #0a3d62;
+  padding: 5px;
+}
+ 
+.org-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+ 
+.event-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+ 
+.detail-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 280px;
+  margin: 15px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  border: 1px solid #eaeaea;
+}
+ 
+.detail-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+ 
+.icon {
+  font-size: 2.5rem;
+  margin-right: 20px;
+  color: #0a3d62;
+  background-color: rgba(52, 152, 219, 0.1);
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+ 
+.text {
+  flex: 1;
+}
+ 
+.text h3 {
+  margin-bottom: 8px;
+  color: #0a3d62;
+}
+ 
+.text p {
+  color: #555;
+  font-weight: 500;
+}
+ 
+/* Event end */
+ 
+/* eventname end */
