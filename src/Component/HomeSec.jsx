@@ -1,5 +1,6 @@
 import React from 'react';
 import Schedule from './Schedule';
+import Footer from './Footer';
 
 function HomeSec() {
   return (
@@ -55,6 +56,7 @@ function HomeSec() {
       </div>
       {/* date & time end */}
       <Schedule/>
+      <Footer/>
     </>
   );
 }
