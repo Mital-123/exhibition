@@ -3,7 +3,7 @@ import React from 'react'
 function Schedule() {
     return (
         <>
-            <section class="schedule">
+            <section class="schedule ">
                 <div class="container">
                     <div className="col-lg-10 mx-auto day-schedule">
                         <div class="">
