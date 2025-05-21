@@ -1,19 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+SC:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Hind Vadodara";
+  font-family: "Montserrat", sans-serif;
+
+
 }
+
 :root {
   --info: #0dcaf0;
-  --dark: #181c28;
+  --dark: #141a2c;
 }
+
+.orangecolor {
+  color: rgb(255, 153, 0);
+}
+
 .darkcolor {
-  color: var(--dark);
+  color: var(--dark) !important;
 }
+
+.darkcolorbg {
+  background-color: var(--dark) !important;
+}
+
 .infocolor {
   color: var(--info);
 }
+
 .pera {
   font-size: 14px;
 }
@@ -38,73 +54,207 @@
   text-transform: uppercase;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
   clip-path: polygon(
-    /* Top-left */ 0% var(--curve-size),
-    var(--curve-size) 0,
-    /* top-right */ 100% 0,
-    100% calc(100% - var(--curve-size)),
-    /* bottom-right 1 */ calc(100% - var(--curve-size)) 100%,
-    /* bottom-right 2 */ 0 100%
-  );
+      /* Top-left */
+      0% var(--curve-size),
+      var(--curve-size) 0,
+      /* top-right */
+      100% 0,
+      100% calc(100% - var(--curve-size)),
+      /* bottom-right 1 */
+      calc(100% - var(--curve-size)) 100%,
+      /* bottom-right 2 */
+      0 100%);
   transition: color 250ms;
 }
+
 .btncss::after,
 .btncss::before {
   content: "";
   position: absolute;
   inset: 0;
 }
+
 .btncss::before {
   background: var(--border-color);
   background-size: 300% 300%;
   animation: move-bg7234 5s ease infinite;
   z-index: -2;
 }
+
 @keyframes move-bg7234 {
   0% {
     background-position: 31% 0%;
   }
+
   50% {
     background-position: 70% 100%;
   }
+
   100% {
     background-position: 31% 0%;
   }
 }
+
 .btncss::after {
   background: var(--bg);
   z-index: -1;
   clip-path: polygon(
-    /* Top-left */ var(--border-width)
-      calc(var(--curve-size) + var(--border-width) * 0.5),
-    calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
-    /* top-right */ calc(100% - var(--border-width)) var(--border-width),
-    calc(100% - var(--border-width))
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
-    /* bottom-right 1 */
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
-      calc(100% - var(--border-width)),
-    /* bottom-right 2 */ var(--border-width) calc(100% - var(--border-width))
-  );
+      /* Top-left */
+      var(--border-width) calc(var(--curve-size) + var(--border-width) * 0.5),
+      calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
+      /* top-right */
+      calc(100% - var(--border-width)) var(--border-width),
+      calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      /* bottom-right 1 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+      /* bottom-right 2 */
+      var(--border-width) calc(100% - var(--border-width)));
   transition: clip-path 500ms;
 }
+
 .btncss:where(:hover, :focus)::after {
   clip-path: polygon(
-    /* Top-left */ calc(100% - var(--border-width))
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
-    calc(100% - var(--border-width)) var(--border-width),
-    /* top-right */ calc(100% - var(--border-width)) var(--border-width),
-    calc(100% - var(--border-width))
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
-    /* bottom-right 1 */
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
-      calc(100% - var(--border-width)),
-    /* bottom-right 2 */
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
-      calc(100% - var(--border-width))
-  );
+      /* Top-left */
+      calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      calc(100% - var(--border-width)) var(--border-width),
+      /* top-right */
+      calc(100% - var(--border-width)) var(--border-width),
+      calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      /* bottom-right 1 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+      /* bottom-right 2 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)));
   transition: 200ms;
 }
+
 .btncss:where(:hover, :focus) {
   color: var(--dark);
 }
+
 /* Button end */
+
+/* homesec start */
+.borderbtm::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 4px;
+  width: 10%;
+  background: linear-gradient(to right, #0091b6, #d7f6fc);
+  /* Customize colors */
+
+}
+
+/* homesec end */
+
+
+/* date & time start */
+.bglightbluecolor {
+  background-color: #000330;
+}
+
+/* date & time end */
+
+
+
+
+/* Schedule Styles */
+.schedule {
+  background: linear-gradient(150deg, var(--dark) 45%, #0091b6 100%);
+  /* background: linear-gradient(to right, #0091b6, #d7f6fc); */
+  background-attachment: fixed;
+  color: white;
+  padding: 40px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.schedule h2 {
+  color: white;
+  text-align: center;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+.schedule h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #f39c12;
+}
+
+.day-schedule {
+  margin-bottom: 40px;
+}
+
+.event-list {
+  list-style: none;
+}
+
+.event-list li {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.event-list li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateX(5px);
+}
+
+.time {
+  font-weight: bold;
+  min-width: 100px;
+  color: #f39c12;
+}
+
+.event-name {
+  flex: 1;
+}
+
+
+.day-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ffffffb5;
+}
+
+.day-number {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #f39c12;
+  line-height: 1;
+  margin-right: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.day-info h3 {
+  color: white;
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+}
+
+.day-info p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+}
+
+.day-schedule {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
