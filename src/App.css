@@ -8,8 +8,14 @@
   --info: #0dcaf0;
   --dark: #181c28;
 }
+.orangecolor{
+  color: rgb(255, 153, 0);
+}
 .darkcolor {
-  color: var(--dark);
+  color: var(--dark) !important;
+}
+.darkcolorbg {
+  background-color: var(--dark) !important;
 }
 .infocolor {
   color: var(--info);
@@ -108,3 +114,25 @@
   color: var(--dark);
 }
 /* Button end */
+
+/* homesec start */
+.borderbtm::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 4px;
+  width: 10%;
+  background: linear-gradient(to right ,  #0091b6,#d7f6fc); /* Customize colors */
+  
+}
+
+/* homesec end */
+
+
+/* date & time start */
+.bglightbluecolor{
+  background-color: #000330;
+}
+/* date & time end */
