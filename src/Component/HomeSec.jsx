@@ -1,6 +1,8 @@
 import React from 'react';
 import Schedule from './Schedule';
 import Footer from './Footer';
+import BookStole from './BookStole';
+import Imageslider from './Imageslider';
 
 function HomeSec() {
   return (
@@ -55,7 +57,9 @@ function HomeSec() {
         </div>
       </div>
       {/* date & time end */}
+      <Imageslider/>
       <Schedule/>
+      <BookStole/>
       <Footer/>
     </>
   );
