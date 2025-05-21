@@ -158,8 +158,6 @@
 /* date & time end */
 
 
-
-
 /* Schedule Styles */
 .schedule {
   background: linear-gradient(150deg, var(--dark) 45%, #0091b6 100%);
@@ -258,3 +256,28 @@
   padding: 30px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
+/* footer start */
+
+.footer_bg {
+  background-color: var(--dark);
+}
+.custom-box {
+  transition: all 0.4s ease;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.custom-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4), 0 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: var(--dark);
+  cursor: pointer;
+}
+.footer_no,
+.footer_icon {
+  transition: all 0.4s ease-in-out;
+}
+.custom-box:hover .footer_no,
+.custom-box:hover .footer_icon {
+  color: grey !important;
+}
+
+/* footer end */
