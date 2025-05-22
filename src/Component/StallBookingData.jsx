@@ -40,6 +40,7 @@ function StallBookingData() {
                             <th>E-mail</th>
                             <th>Phone No.</th>
                             <th>Business</th>
+                            <th>Category</th>
                             <th>Stall</th>
                         </tr>
                     </thead>
@@ -53,6 +54,7 @@ function StallBookingData() {
                                     <td>{item.email}</td>
                                     <td>{item.phnumber}</td>
                                     <td>{item.business}</td>
+                                    <td>{item.category}</td>
                                     <td className='text-center'>{item.stall}</td>
                                 </tr>
                             ))
