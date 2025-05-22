@@ -8,21 +8,20 @@ import Event from './Event';
 function HomeSec() {
   return (
     <>
-      <div className='darkcolorbg text-center p-3 p-lg-4'>
+      <div className=' text-center p-3 p-lg-4 LANDINGIMAGE'>
         <img src={require("../assets/Images/business_img.jpg")} alt="" className='poster_img img-fluid p-2' style={{ border: "5px double var(--info)" }} />
       </div>
 
       <Event />
 
       {/* date & time start */}
-      <div className='darkcolorbg py-4'>
+      <div className='LANDINGIMAGE py-4'>
         <div className='position-relative'>
           <h1 className=' text-white text-center fw-bold py-2  borderbtm'><span className='orangecolor'>Businessotsav</span> Exhibition 2025 🔊</h1>
         </div>
-      </div>
 
-      <div className="darkcolorbg py-3 pb-5">
-        <div className="container bglightbluecolor my-2">
+      <div className=" py-3 pb-5 mt-5">
+        <div className="container bglightbluecolor ">
           <div className="row g-3 py-2 d-flex justify-content-center">
             <div className="col-12 col-lg-3">
               <div className="h-100 shadow">
@@ -53,6 +52,8 @@ function HomeSec() {
           </div>
         </div>
       </div>
+      </div>
+
       {/* date & time end */}
 
       <Imageslider />
