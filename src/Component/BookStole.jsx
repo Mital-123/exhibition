@@ -22,8 +22,8 @@ function BookStole() {
                                     </div>
                                 </div>
                                 <div className=' text-center'>
-                                    <Link to={"/buynow"} className='text-decoration-none'>
-                                        <ButtonCom btn='Book  Now' />
+                                    <Link to={"/booknow"} className='text-decoration-none'>
+                                        <ButtonCom btn='Book Now' />
                                     </Link>
                                 </div>
                             </div>
