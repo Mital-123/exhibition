@@ -33,6 +33,10 @@
 }
 
 /* Poster image start */
+.LANDINGIMAGE{
+  background: linear-gradient(150deg, var(--dark) 45%, #56ddff 100%);
+
+}
 .poster_img {
   width: 60%;
   height: auto;
@@ -171,7 +175,13 @@
 
 /* Schedule Styles */
 .schedule {
-  background: linear-gradient(150deg, var(--dark) 45%, #0091b6 100%);
+  /* background: linear-gradient(150deg, var(--dark) 45%, #56ddff 100%); */
+background-image: url("./assets/Images/business_img.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+box-shadow: inset 0px 0px 1500px 1000px #141a2ce3;
+  /* background: linear-gradient(150deg, var(--dark) 45%, #0091b6 100%); */
   /* background: linear-gradient(to right, #0091b6, #d7f6fc); */
   background-attachment: fixed;
   color: white;
@@ -208,7 +218,7 @@
 
 .event-list li {
   display: flex;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.212);
   margin-bottom: 15px;
   padding: 15px 20px;
   border-radius: 8px;
@@ -260,9 +270,10 @@
 }
 
 .day-schedule {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.075);
   border-radius: 20px;
   padding: 30px;
+backdrop-filter: blur(10px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 /* footer start */
