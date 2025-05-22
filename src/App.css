@@ -255,7 +255,10 @@
 /* footer start */
 
 .footer_bg {
-  background-color: var(--dark);
+  background: repeating-linear-gradient(90deg, transparent, #141a2c) 0% 0% / 3em
+    3em #0dcaf0;
+  background-size: 100px 100px;
+  box-shadow: inset 0px 0px 1500px 1000px #141a2ce4;
 }
 .custom-box {
   transition: all 0.4s ease;

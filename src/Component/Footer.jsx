@@ -10,7 +10,7 @@ function Footer() {
                 <div className='container'>
                     <div className='pb-4 pb-lg-5 d-flex justify-content-center'>
                         <div className="py-2 px-3 fs-4 rounded-4 fw-medium text-uppercase" style={{ width: "fit-content", background: "var(--info)" }}>
-                            Join Us – Book Your Stall
+                            Stall Bookings Open – Contact Now!
                         </div>
                     </div>
                     <div className='row g-4 p-2 p-lg-0'>
