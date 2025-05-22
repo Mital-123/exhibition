@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 function Footer() {
     return (
         <>
-            <div className='footer_bg py-5 text-light text-center'>
+            <div className='footer_bg py-3 py-lg-5 text-light text-center'>
                 <div className='container'>
 
                   <div className="row bglightbluecolor p-5 p-lg-4 rounded-4 d-flex justify-content-center rounded-pill  ">
@@ -61,7 +61,7 @@ function Footer() {
 </div>
 
 
-                    <div className='pb-4 pb-lg-5 mt-5 d-flex justify-content-center'>
+                    <div className='pb-4 pb-lg-5 mt-2 mt-lg-5 d-flex justify-content-center'>
                         <div className="py-2 px-3 fs-4 rounded-4 fw-medium text-uppercase" style={{ width: "fit-content", background: "var(--info)" }}>
                             Stall Bookings Open – Contact Now!
                         </div>

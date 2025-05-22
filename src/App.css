@@ -176,7 +176,41 @@
 /* date & time end */
 
 /* Schedule Styles */
+ 
+.marquee {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+ 
+.marquee-content {
+    display: inline-block;
+    flex-shrink: 0;
+    animation: marquee 220s linear infinite;
+}
+ 
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+ 
+    100% {
+        transform: translateX(-100%);
+    }
+}
+ 
+.font_stroke {
+    color: rgba(255, 255, 255, 0) !important;
+    -webkit-text-stroke-width: 1.1px !important;
+    stroke-width: 1px !important;
+    -webkit-text-stroke-color: rgb(254, 255, 255) !important;
+    font-size: 50px !important;
+    text-transform: capitalize !important;
+}
+ 
 .schedule {
+  
   /* background: linear-gradient(150deg, var(--dark) 45%, #56ddff 100%); */
 background-image:url("https://www.modular.it/Modular/Azienda/image-thumb__17525__widget_text_right_image_fluid/Fun.webp");
 background-repeat: no-repeat;

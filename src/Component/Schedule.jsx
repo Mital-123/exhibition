@@ -61,6 +61,111 @@ function Schedule() {
                         </div>
                     </div>
                 </div>
+
+              <div className="marquee-wrapper" >
+  <div className="marquee">
+    <div className="marquee-content">
+      {[
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+      ].map((text, i) => (
+        <span
+          key={i}
+          className={`font_stroke me-4 ${text.includes('Free') ? 'text-danger' : ''}`}
+        >
+          {text}
+        </span>
+      ))}
+
+      {/* Duplicate for seamless scroll */}
+      {[
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+      ].map((text, i) => (
+        <span
+          key={`dup-${i}`}
+          className={`font_stroke me-4 ${text.includes('Free') ? 'text-danger' : ''}`}
+        >
+          {text}
+        </span>
+      ))}
+      {[
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+      ].map((text, i) => (
+        <span
+          key={`dup-${i}`}
+          className={`font_stroke me-4 ${text.includes('Free') ? 'text-danger' : ''}`}
+        >
+          {text}
+        </span>
+      ))}
+      {[
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+      ].map((text, i) => (
+        <span
+          key={`dup-${i}`}
+          className={`font_stroke me-4 ${text.includes('Free') ? 'text-danger' : ''}`}
+        >
+          {text}
+        </span>
+      ))}
+      {[
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+        'Businessotsav Exhibition 2025 🔊',
+        'Free Entry For Visitors.',
+      ].map((text, i) => (
+        <span
+          key={`dup-${i}`}
+          className={`font_stroke me-4 ${text.includes('Free') ? 'text-danger' : ''}`}
+        >
+          {text}
+        </span>
+      ))}
+    </div>
+  </div>
+</div>
+
             </section>
         </>
     )
