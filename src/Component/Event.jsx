@@ -3,7 +3,7 @@ import React from 'react'
 function Event() {
     return (
         <>
-            <section className="event-info py-4">
+            <section className=" event-info py-4">
                 <div className="container">
                     <div className="organizers d-flex justify-content-space-around flex-wrap text-center">
                         <div className="org-item">

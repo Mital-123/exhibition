@@ -8,23 +8,26 @@ import Event from './Event';
 function HomeSec() {
   return (
     <>
-      <div className=' text-center p-3 p-lg-4 LANDINGIMAGE'>
+      <div className=' text-center p-3 p-lg-4  LANDINGIMAGE'>
+         <div className='position-relative  mt-2 mb-4'>
+          <h1 className=' text-white text-center fw-bold py-2  borderbtm'><span className='orangecolor'>Businessotsav</span> Exhibition 2025 🔊</h1>
+        </div>
         <img src={require("../assets/Images/business_img.jpg")} alt="" className='poster_img img-fluid p-2' style={{ border: "5px double var(--info)" }} />
       </div>
 
       <Event />
 
       {/* date & time start */}
-      <div className='LANDINGIMAGE py-4'>
-        <div className='position-relative'>
+      <div className='LADINGIMAGE '>
+        {/* <div className='position-relative'>
           <h1 className=' text-white text-center fw-bold py-2  borderbtm'><span className='orangecolor'>Businessotsav</span> Exhibition 2025 🔊</h1>
-        </div>
+        </div> */}
 
-      <div className=" py-3 pb-5 mt-5">
+      <div className="bglightbluecolor py-5 ">
         <div className="container bglightbluecolor ">
-          <div className="row g-3 py-2 d-flex justify-content-center">
-            <div className="col-12 col-lg-3">
-              <div className="h-100 shadow">
+          <div className="row g-3 py-4 d-flex justify-content-center">
+            <div className="col-12 px-4 px-lg-2 col-lg-3">
+              <div className="h-100 p-3 " style={{ border: "1px solid var(--info)" }} >
                 <div className='text-center'><img src="https://png.pngtree.com/png-vector/20221013/ourmid/pngtree-calendar-icon-logo-2023-date-time-png-image_6310337.png" alt="" className='img-fluid w-25 ' />
                   <h3 className='text-info text-center fw-bold py-2'>21 & 22 June</h3>
                   <div className='text-white '>Saturday & Sunday</div>
@@ -32,15 +35,15 @@ function HomeSec() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-lg-5">
-              <div className="h-100">
+            <div className="col-12 px-4 px-lg-2 col-lg-5">
+              <div className="h-100 p-3 " style={{ border: "1px solid var(--info)" }} >
                 <div className='text-center'><img src={require("../assets/Images/free entry 01.png")} alt="" className='img-fluid ' width={"50%"} />
 
                 </div>
               </div>
             </div>
-            <div className="col-12 col-lg-3">
-              <div className="h-100 shadow">
+            <div className="col-12 px-4 px-lg-2 col-lg-3">
+              <div className="h-100 p-3 " style={{ border: "1px solid var(--info)" }} >
                 <div className='text-center'><img src={require("../assets/Images/location.png")} alt="" className='img-fluid w-25 ' />
                   <h3 className='text-info text-center fw-bold py-2'>Venue</h3>
                   <div className='text-white px-5'>Iskon Mall,

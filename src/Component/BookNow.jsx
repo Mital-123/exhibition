@@ -54,6 +54,15 @@ function BookNow() {
                 errormsg[e.target.name] = "";
             }
         }
+
+        if (e.target.name === "category") {
+            if (e.target.value === "" || e.target.value === "Select Near business category") {
+                errormsg[e.target.name] = "Please select a valid business category!";
+            } else {
+                errormsg[e.target.name] = "";
+            }
+        }
+
         if (e.target.name === "stall") {
             if (!value || value < 1 || value > 5) {
                 errormsg.stall = "Please select number of stall!";
@@ -81,6 +90,10 @@ function BookNow() {
 
         if (!obj.business || obj.business === "Select Near business") {
             errormsg.business = "Please select a valid business!";
+        }
+
+        if (!obj.category || obj.category === "Select Near business category") {
+            errormsg.category = "Please select a valid business category!";
         }
 
         if (!obj.stall || obj.stall < 1 || obj.stall > 5) {
@@ -116,7 +129,7 @@ function BookNow() {
 
     return (
         <>
-            <div className="w-100 h-auto d-flex position-relative bg-light py-4">
+            <div className="w-100 h-auto d-flex position-relative py-4">
                 <div className="container position-relative z-1">
                     <div className="row d-flex justify-content-center align-items-center">
                         <div className="col-12 col-lg-6 mb-4 px-4">
@@ -128,7 +141,7 @@ function BookNow() {
                         </div>
 
                         <div className="col-12 col-lg-6 mb-4 px-4">
-                            <div className="h-100 bg-white shadow border rounded-4 p-4">
+                            <div className="h-100 bg-white shadow border p-4">
                                 <div className="title fs-4 infocolor fw-bold mb-2">Stall Booking Form</div>
                                 <div className="rounded mb-3" style={{ width: "50px", border: "3px solid var(--orange)" }}></div>
 
@@ -154,6 +167,12 @@ function BookNow() {
                                     <label htmlFor="business" className="fw-medium">Business Name</label>
                                     <input type="text" className="form-control mt-1" name="business" value={obj.business} onChange={getdata} id="business" placeholder="Enter Your Business Name" />
                                     <div className='text-danger fw-medium' style={{ fontSize: "13px" }}>{errormsg.business ? errormsg.business : '\u00A0'}</div>
+                                </div>
+
+                                <div>
+                                    <label htmlFor="category" className="fw-medium">Business Category</label>
+                                    <input type="text" className="form-control mt-1" name="category" value={obj.category} onChange={getdata} id="business" placeholder="Enter Your Business Category" />
+                                    <div className='text-danger fw-medium' style={{ fontSize: "13px" }}>{errormsg.category ? errormsg.category : '\u00A0'}</div>
                                 </div>
 
                                 <div>
