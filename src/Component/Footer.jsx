@@ -8,7 +8,60 @@ function Footer() {
         <>
             <div className='footer_bg py-5 text-light text-center'>
                 <div className='container'>
-                    <div className='pb-4 pb-lg-5 d-flex justify-content-center'>
+
+                  <div className="row bglightbluecolor p-5 p-lg-4 rounded-4 d-flex justify-content-center rounded-pill  ">
+  {/* Supporters Section */}
+  <div className="col-12 col-lg-5 mb-4 mb-lg-0  pt-3 pt-lg-0 ">
+    <div className="h-100">
+      <div className="text-center mb-4">
+        <div className=" px-4 fs-4 rounded-4 fw-medium text-uppercase" style={{ display: "inline-block", background: "var(--info)" }}>
+          Our Supporters
+        </div>
+      </div>
+      <div className="row g-3 justify-content-center align-items-center">
+        {[
+          "qt=q_95.webp",
+          "Screenshot 2025-05-22 163755.jpg",
+          "Screenshot 2025-05-22 163734.jpg",
+          "logo kg.jpg",
+        ].map((img, index) => (
+          <div key={index} className="col-6 col-md-3 d-flex justify-content-center">
+            <div className="supporter-img-wrapper">
+              <img
+                src={require(`../assets/Images/${img}`)}
+                alt={`Supporter ${index + 1}`}
+                className="img-fluid supporter-img"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  {/* Photography Section */}
+  <div className="col-12 col-lg-4">
+    <div className="h-100">
+      <div className="text-center mb-4">
+        <div className=" px-4 fs-4 rounded-4 fw-medium text-uppercase" style={{ display: "inline-block", background: "var(--info)" }}>
+          Photography by
+        </div>
+      </div>
+      <div className="d-flex justify-content-center">
+        <div className="photography-img-wrapper">
+          <img
+            src={require("../assets/Images/Screenshot 2025-05-22 163901.jpg")}
+            alt="Photography by"
+            className="img-fluid supporter-img"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+                    <div className='pb-4 pb-lg-5 mt-5 d-flex justify-content-center'>
                         <div className="py-2 px-3 fs-4 rounded-4 fw-medium text-uppercase" style={{ width: "fit-content", background: "var(--info)" }}>
                             Stall Bookings Open – Contact Now!
                         </div>
