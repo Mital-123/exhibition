@@ -14,12 +14,12 @@ function HomeSec() {
 
 
 
-     
-   <Event/>
+
+      <Event />
 
       {/* date & time start */}
-       <div className='darkcolorbg py-3'>
-        <div className='position-relative '>
+      <div className='darkcolorbg py-4'>
+        <div className='position-relative'>
           <h1 className=' text-white text-center fw-bold py-2  borderbtm'><span className='orangecolor'>Businessotsav</span> Exhibition 2025 🔊</h1>
         </div>
       </div>
@@ -30,7 +30,7 @@ function HomeSec() {
             <div className="col-12 col-lg-3">
               <div className="h-100 shadow">
                 <div className='text-center'><img src="https://png.pngtree.com/png-vector/20221013/ourmid/pngtree-calendar-icon-logo-2023-date-time-png-image_6310337.png" alt="" className='img-fluid w-25 ' />
-                  <h3 className=' text-info text-center fw-bold py-2  borderbtm'>21 & 22 June</h3>
+                  <h3 className='text-info text-center fw-bold py-2'>21 & 22 June</h3>
                   <div className='text-white '>Saturday & Sunday</div>
                   <div className='text-white '>10 am to 8 pm</div>
                 </div>
@@ -46,11 +46,10 @@ function HomeSec() {
             <div className="col-12 col-lg-3">
               <div className="h-100 shadow">
                 <div className='text-center'><img src={require("../assets/Images/location.png")} alt="" className='img-fluid w-25 ' />
-                  <h3 className=' text-info text-center fw-bold py-2  borderbtm'>Venue</h3>
+                  <h3 className='text-info text-center fw-bold py-2'>Venue</h3>
                   <div className='text-white px-5'>Iskon Mall,
                     Opp. Rajhans Theatre,
                     Piplod, Surat.</div>
-
                 </div>
               </div>
             </div>
@@ -59,11 +58,11 @@ function HomeSec() {
         </div>
       </div>
       {/* date & time end */}
-   
-      <Imageslider/>
-      <Schedule/>
-      <BookStole/>
-      <Footer/>
+
+      <Imageslider />
+      <Schedule />
+      <BookStole />
+      <Footer />
     </>
   );
 }
