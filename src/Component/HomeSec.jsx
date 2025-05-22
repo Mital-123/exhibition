@@ -8,12 +8,9 @@ import Event from './Event';
 function HomeSec() {
   return (
     <>
-      <div className=' darkcolorbg text-center'>
-        <img src={require("../assets/Images/business_img.jpg")} alt="" className='img-fluid ' width={"50%"} />
+      <div className='darkcolorbg text-center p-3 p-lg-4'>
+        <img src={require("../assets/Images/business_img.jpg")} alt="" className='poster_img img-fluid p-2' style={{ border: "5px double var(--info)" }} />
       </div>
-
-
-
 
       <Event />
 
@@ -53,7 +50,6 @@ function HomeSec() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
