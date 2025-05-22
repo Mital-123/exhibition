@@ -1,7 +1,5 @@
 import { useState } from "react";
 import axios from "axios";
-import { IoMail } from "react-icons/io5";
-import { MdCall } from "react-icons/md";
 import { Link } from "react-router-dom";
 import ButtonCom from "./ButtonCom";
 

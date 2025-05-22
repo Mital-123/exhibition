@@ -33,20 +33,23 @@
 }
 
 /* Poster image start */
-.LANDINGIMAGE{
+.LANDINGIMAGE {
   background: linear-gradient(150deg, var(--dark) 45%, #56ddff 100%);
 
 }
+
 .poster_img {
   width: 60%;
   height: auto;
 }
+
 @media (max-width: 575.98px) {
   .poster_img {
     width: 100%;
     height: 430px;
   }
 }
+
 /* Poster image end */
 
 /* Button start */
@@ -69,13 +72,16 @@
   text-transform: uppercase;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
   clip-path: polygon(
-    /* Top-left */ 0% var(--curve-size),
-    var(--curve-size) 0,
-    /* top-right */ 100% 0,
-    100% calc(100% - var(--curve-size)),
-    /* bottom-right 1 */ calc(100% - var(--curve-size)) 100%,
-    /* bottom-right 2 */ 0 100%
-  );
+      /* Top-left */
+      0% var(--curve-size),
+      var(--curve-size) 0,
+      /* top-right */
+      100% 0,
+      100% calc(100% - var(--curve-size)),
+      /* bottom-right 1 */
+      calc(100% - var(--curve-size)) 100%,
+      /* bottom-right 2 */
+      0 100%);
   transition: color 250ms;
 }
 
@@ -111,35 +117,31 @@
   background: var(--bg);
   z-index: -1;
   clip-path: polygon(
-    /* Top-left */ var(--border-width)
-      calc(var(--curve-size) + var(--border-width) * 0.5),
-    calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
-    /* top-right */ calc(100% - var(--border-width)) var(--border-width),
-    calc(100% - var(--border-width))
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
-    /* bottom-right 1 */
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
-      calc(100% - var(--border-width)),
-    /* bottom-right 2 */ var(--border-width) calc(100% - var(--border-width))
-  );
+      /* Top-left */
+      var(--border-width) calc(var(--curve-size) + var(--border-width) * 0.5),
+      calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
+      /* top-right */
+      calc(100% - var(--border-width)) var(--border-width),
+      calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      /* bottom-right 1 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+      /* bottom-right 2 */
+      var(--border-width) calc(100% - var(--border-width)));
   transition: clip-path 500ms;
 }
 
 .btncss:where(:hover, :focus)::after {
   clip-path: polygon(
-    /* Top-left */ calc(100% - var(--border-width))
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
-    calc(100% - var(--border-width)) var(--border-width),
-    /* top-right */ calc(100% - var(--border-width)) var(--border-width),
-    calc(100% - var(--border-width))
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
-    /* bottom-right 1 */
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
-      calc(100% - var(--border-width)),
-    /* bottom-right 2 */
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
-      calc(100% - var(--border-width))
-  );
+      /* Top-left */
+      calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      calc(100% - var(--border-width)) var(--border-width),
+      /* top-right */
+      calc(100% - var(--border-width)) var(--border-width),
+      calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      /* bottom-right 1 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+      /* bottom-right 2 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)));
   transition: 200ms;
 }
 
@@ -153,6 +155,7 @@
 .borderbtm {
   position: relative !important;
 }
+
 .borderbtm::after {
   content: "";
   position: absolute;
@@ -176,11 +179,11 @@
 /* Schedule Styles */
 .schedule {
   /* background: linear-gradient(150deg, var(--dark) 45%, #56ddff 100%); */
-background-image: url("./assets/Images/business_img.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-box-shadow: inset 0px 0px 1500px 1000px #101627e1;
+  background-image: url("https://www.modular.it/Modular/Azienda/image-thumb__17525__widget_text_right_image_fluid/Fun.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0px 0px 1500px 1000px #101627b4;
   /* background: linear-gradient(150deg, var(--dark) 45%, #0091b6 100%); */
   /* background: linear-gradient(to right, #0091b6, #d7f6fc); */
   background-attachment: fixed;
@@ -273,31 +276,35 @@ box-shadow: inset 0px 0px 1500px 1000px #101627e1;
   background-color: rgba(255, 255, 255, 0.075);
   border-radius: 20px;
   padding: 30px;
-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.712);
 }
+
 /* footer start */
 
 .footer_bg {
-  background: repeating-linear-gradient(90deg, transparent, #141a2c) 0% 0% / 3em
-    3em #0dcaf0;
+  background: repeating-linear-gradient(90deg, transparent, #141a2c) 0% 0% / 3em 3em #0dcaf0;
   background-size: 100px 100px;
   box-shadow: inset 0px 0px 1500px 1000px #141a2ce4;
 }
+
 .custom-box {
   transition: all 0.4s ease;
   background-color: rgba(255, 255, 255, 0.05);
 }
+
 .custom-box:hover {
   transform: scale(1.03);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.4), 0 4px 15px rgba(0, 0, 0, 0.2);
   background-color: var(--dark);
   cursor: pointer;
 }
+
 .footer_no,
 .footer_icon {
   transition: all 0.4s ease-in-out;
 }
+
 .custom-box:hover .footer_no,
 .custom-box:hover .footer_icon {
   color: grey !important;
@@ -360,6 +367,7 @@ backdrop-filter: blur(10px);
     height: 180px !important;
   }
 }
+
 /* image carousel end */
 
 /* Event start */
@@ -367,6 +375,7 @@ backdrop-filter: blur(10px);
   background: linear-gradient(to bottom, #f9f9f9, #ffffff);
   position: relative;
 }
+
 .event-info::before {
   content: "";
   position: absolute;
@@ -375,6 +384,7 @@ backdrop-filter: blur(10px);
   width: 100%;
   height: 10px;
 }
+
 .org-item {
   flex: 1;
   min-width: 280px;
@@ -388,6 +398,7 @@ backdrop-filter: blur(10px);
   position: relative;
   overflow: hidden;
 }
+
 .org-item::before {
   content: "";
   position: absolute;
@@ -397,10 +408,12 @@ backdrop-filter: blur(10px);
   height: 5px;
   background: linear-gradient(to right, #3498db, #3498dbcf, #3498db89);
 }
+
 .org-item:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
+
 .org-logo {
   width: 100px;
   height: 100px;
@@ -410,10 +423,12 @@ backdrop-filter: blur(10px);
   border: 3px solid white;
   padding: 5px;
 }
+
 .org-logo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
 }
+
 /* Event end */
