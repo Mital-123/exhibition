@@ -129,10 +129,10 @@ function BookNow() {
 
     return (
         <>
-            <div className="w-100 h-auto d-flex position-relative py-4">
+            <div className="w-100 h-auto d-flex position-relative py-4 overflow-hidden">
                 <div className="container position-relative z-1">
                     <div className="row d-flex justify-content-center align-items-center">
-                        <div className="col-12 col-lg-6 mb-4 px-4">
+                        <div className="col-12 col-lg-6 mb-4 px-4" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true" >
                             <div className="h-100">
                                 <div style={{ border: "7px double var(--info)" }} className="p-2">
                                     <img src={require("../assets/Images/business_img.jpg")} className="booknow_img img-fluid" alt="" />
@@ -140,7 +140,7 @@ function BookNow() {
                             </div>
                         </div>
 
-                        <div className="col-12 col-lg-6 mb-4 px-4">
+                        <div className="col-12 col-lg-6 mb-4 px-4" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
                             <div className="h-100 bg-white shadow border p-4">
                                 <div className="title fs-4 infocolor fw-bold mb-2">Stall Booking Form</div>
                                 <div className="rounded mb-3" style={{ width: "50px", border: "3px solid var(--orange)" }}></div>

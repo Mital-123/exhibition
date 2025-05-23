@@ -4,8 +4,16 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomeSec from './Component/HomeSec';
 import BookNow from './Component/BookNow';
 import StallBookingData from './Component/StallBookingData';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+
+  useEffect(() => {
+     Aos.init();
+  }, []);
+
   return (
     <>
       <BrowserRouter>

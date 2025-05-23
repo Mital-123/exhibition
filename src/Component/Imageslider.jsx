@@ -32,7 +32,7 @@ function Imageslider() {
   return (
     <>
 
-      <div className='schedule'>
+      <div className='schedule overflow-hidden'>
         <div className="partners-logo-slider  mt-2 pt-2 pt-lg-5">
           <div className="slide-track">
             {logos.concat(logos).map((logo, index) => (
