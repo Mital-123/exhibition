@@ -519,7 +519,7 @@ select {
 /* BrandPartner start */
 .brand-partners-section {
   width: 100%;
-  padding: 70px 0 !important;
+  padding: 50px 0 !important;
   background: linear-gradient(150deg, var(--dark) 45%, #56ddff 100%);
   position: relative;
 }

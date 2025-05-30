@@ -75,10 +75,10 @@ function BrandPartner() {
 
         {/* Our Partners */}
         <div className='container'>
-          <div className="text-center mt-5" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+          <div className="text-center mt-3" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
             <h1 className='text-white text-center fw-bold partner-category-title'>Our Partners</h1>
           </div>
-          <div className='row g-4 justify-content-center px-4 py-4'>
+          <div className='row g-4 justify-content-center px-4 pt-2'>
             <div className='col-10 col-sm-6 col-lg-3'>
               <div className="partner-category">
                 <h3 className="partner-category-sub-title">Photography</h3>
