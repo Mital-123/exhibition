@@ -129,61 +129,61 @@ function BookNow() {
 
     return (
         <>
-            <div className="w-100 h-auto d-flex position-relative py-4 overflow-hidden">
+            <div className="w-100 h-auto  d-flex position-relative py-4 overflow-hidden">
                 <div className="container position-relative z-1">
                     <div className="row d-flex justify-content-center align-items-center">
                         <div className="col-12 col-lg-6 mb-4 px-4" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true" >
                             <div className="h-100">
                                 <div style={{ border: "7px double var(--info)" }} className="p-2">
-                                    <img src={require("../assets/Images/business_img.jpg")} className="booknow_img img-fluid" alt="" />
+                                    <img src={require("../assets/eximagies/exhibition.jpeg")} className="booknow_img img-fluid" alt="" />
                                 </div>
                             </div>
                         </div>
 
-                        <div className="col-12 col-lg-6 mb-4 px-4" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
-                            <div className="h-100 bg-white shadow border p-4">
+                        <div className="col-12 col-lg-6 mb-4 px-4 " data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
+                            <div className="h-100 LANDINGIMAGE shadow border p-4">
                                 <div className="title fs-4 infocolor fw-bold mb-2">Stall Booking Form</div>
                                 <div className="rounded mb-3" style={{ width: "50px", border: "3px solid var(--orange)" }}></div>
 
                                 <div>
-                                    <label htmlFor="name" className="fw-medium">Name</label>
+                                    <label htmlFor="name" className="fw-medium text-white">Name</label>
                                     <input type="text" className="form-control mt-1" name="name" value={obj.name} onChange={getdata} id="name" placeholder="Enter Your Name" />
-                                    <div className='text-danger fw-medium' style={{ fontSize: "13px" }}>{errormsg.name ? errormsg.name : '\u00A0'}</div>
+                                    <div className='text-danger fw-bold' style={{ fontSize: "13px" }}>{errormsg.name ? errormsg.name : '\u00A0'}</div>
                                 </div>
 
                                 <div>
-                                    <label htmlFor="email" className="fw-medium">Email</label>
+                                    <label htmlFor="email" className="fw-medium text-white">Email</label>
                                     <input type="email" className="form-control mt-1" name="email" value={obj.email} onChange={getdata} id="email" placeholder="Enter Your E-mail" />
-                                    <div className='text-danger fw-medium' style={{ fontSize: "13px" }}>{errormsg.email ? errormsg.email : '\u00A0'}</div>
+                                    <div className='text-danger fw-bold' style={{ fontSize: "13px" }}>{errormsg.email ? errormsg.email : '\u00A0'}</div>
                                 </div>
 
                                 <div>
-                                    <label htmlFor="phone" className="fw-medium">Phone</label>
+                                    <label htmlFor="phone" className="fw-medium text-white">Phone</label>
                                     <input type="tel" className="form-control mt-1" name="phnumber" value={obj.phnumber} onChange={getdata} id="phone" placeholder="Enter Your Phone Number" />
-                                    <div className='text-danger fw-medium' style={{ fontSize: "13px" }}>{errormsg.phnumber ? errormsg.phnumber : '\u00A0'}</div>
+                                    <div className='text-danger fw-bold' style={{ fontSize: "13px" }}>{errormsg.phnumber ? errormsg.phnumber : '\u00A0'}</div>
                                 </div>
 
                                 <div>
-                                    <label htmlFor="business" className="fw-medium">Business Name</label>
+                                    <label htmlFor="business" className="fw-medium text-white">Business Name</label>
                                     <input type="text" className="form-control mt-1" name="business" value={obj.business} onChange={getdata} id="business" placeholder="Enter Your Business Name" />
-                                    <div className='text-danger fw-medium' style={{ fontSize: "13px" }}>{errormsg.business ? errormsg.business : '\u00A0'}</div>
+                                    <div className='text-danger fw-bold' style={{ fontSize: "13px" }}>{errormsg.business ? errormsg.business : '\u00A0'}</div>
                                 </div>
 
                                 <div>
-                                    <label htmlFor="category" className="fw-medium">Business Category</label>
+                                    <label htmlFor="category" className="fw-medium text-white">Business Category</label>
                                     <input type="text" className="form-control mt-1" name="category" value={obj.category} onChange={getdata} id="business" placeholder="Enter Your Business Category" />
-                                    <div className='text-danger fw-medium' style={{ fontSize: "13px" }}>{errormsg.category ? errormsg.category : '\u00A0'}</div>
+                                    <div className='text-danger fw-bold' style={{ fontSize: "13px" }}>{errormsg.category ? errormsg.category : '\u00A0'}</div>
                                 </div>
 
                                 <div>
-                                    <label htmlFor="stall" className="fw-medium">No. of Stall</label>
+                                    <label htmlFor="stall" className="fw-medium text-white">No. of Stall</label>
                                     <select id="stall" className="form-select mt-1" name="stall" value={obj.stall} onChange={getdata}>
                                         <option value="">Select Stall</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
                                     </select>
-                                    <div className='text-danger fw-medium' style={{ fontSize: "13px" }}>{errormsg.stall ? errormsg.stall : '\u00A0'}</div>
+                                    <div className='text-danger fw-bold' style={{ fontSize: "13px" }}>{errormsg.stall ? errormsg.stall : '\u00A0'}</div>
                                 </div>
                                 <div className="w-100">
                                     <Link to={""} className="text-decoration-none" onClick={savedata}>

@@ -4,6 +4,8 @@ import Footer from './Footer';
 import BookStole from './BookStole';
 import Imageslider from './Imageslider';
 import Event from './Event';
+import Partners from './Partners';
+import BrandPartners from './BrandPartner';
 
 function HomeSec() {
   return (
@@ -12,7 +14,7 @@ function HomeSec() {
         <div className='position-relative  mt-2 mb-4' data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
           <h1 className=' text-white text-center fw-bold py-2  borderbtm'><span className='orangecolor'>Businessotsav</span> Exhibition 2025 🔊</h1>
         </div>
-          <img src={require("../assets/Images/business_img.jpg")} alt="" className='poster_img img-fluid p-2' style={{ border: "5px double var(--info)" }}
+          <img src={require("../assets/eximagies/exhibition.jpeg")} alt="" className='poster_img img-fluid p-2' style={{ border: "5px double var(--info)" }}
         />
       </div>
       <Event />
@@ -61,6 +63,8 @@ function HomeSec() {
       <Imageslider />
       <Schedule />
       <BookStole />
+      {/* <Partners/> */}
+      <BrandPartners/>
       <Footer />
     </>
   );

@@ -9,8 +9,8 @@ function Footer() {
       <div className='footer_bg py-3 py-lg-4 text-light text-center'>
         <div className='container'>
 
-          <div className="row bglightbluecolor p-5 p-lg-4 rounded-4 d-flex justify-content-center rounded-pill  ">
-            {/* Supporters Section */}
+          {/* <div className="row bglightbluecolor p-5 p-lg-4 rounded-4 d-flex justify-content-center rounded-pill  ">
+          
             <div className="col-12 col-lg-5 mb-4 mb-lg-0  pt-3 pt-lg-0 " data-aos="fade-right" data-aos-duration="1500" data-aos-once="true" data-aos-delay="50">
               <div className="h-100">
                 <div className="text-center mb-4">
@@ -21,14 +21,14 @@ function Footer() {
                 <div className="row g-3 justify-content-center align-items-center">
                   {[
                     "qt=q_95.webp",
-                    "Screenshot 2025-05-22 163755.jpg",
-                    "Screenshot 2025-05-22 163734.jpg",
-                    "logo kg.jpg",
+                    "SUPPORTER 01.jpg",
+                    "SUPPORTER 02.jpg",
+                    "SUPPORTER 03.jpg",
                   ].map((img, index) => (
                     <div key={index} className="col-6 col-md-3 d-flex justify-content-center" >
                       <div className="supporter-img-wrapper">
                         <img
-                          src={require(`../assets/Images/${img}`)}
+                          src={require(`../assets/eximagies/${img}`)}
                           alt={`Supporter ${index + 1}`}
                           className="img-fluid supporter-img"
                         />
@@ -39,7 +39,7 @@ function Footer() {
               </div>
             </div>
 
-            {/* Photography Section */}
+  
             <div className="col-12 col-lg-4" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true" data-aos-delay="50">
               <div className="h-100">
                 <div className="text-center mb-4">
@@ -50,7 +50,7 @@ function Footer() {
                 <div className="d-flex justify-content-center">
                   <div className="photography-img-wrapper">
                     <img
-                      src={require("../assets/Images/Screenshot 2025-05-22 163901.jpg")}
+                      src={require("../assets/eximagies/photography.jpg")}
                       alt="Photography by"
                       className="img-fluid supporter-img"
                     />
@@ -58,11 +58,11 @@ function Footer() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
 
           <div className='pb-4  mt-2 mt-lg-4 d-flex justify-content-center'>
-            <div className="py-2 px-3 fs-4 rounded-4 fw-medium text-uppercase" style={{ width: "fit-content", background: "var(--info)" }}  data-aos="fade-up" data-aos-duration="1500" data-aos-once="true" >
+            <div className="py-2 px-3 fs-4 rounded-4 fw-medium text-uppercase" style={{ width: "fit-content", background: "var(--info)" }} data-aos="fade-up" data-aos-duration="1500" data-aos-once="true" >
               Stall Bookings Open – Contact Now!
             </div>
           </div>

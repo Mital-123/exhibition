@@ -16,13 +16,16 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+     <div className='overflow-hidden'>
+
+       <BrowserRouter>
         <Routes>
           <Route path='/' element={<HomeSec />} />
           <Route path='/booknow' element={<BookNow />} />
           <Route path='/BookingData' element={<StallBookingData />} />
         </Routes>
       </BrowserRouter>
+     </div>
     </>
   );
 }
