@@ -1,7 +1,5 @@
 import { Image } from "react-bootstrap";
 
-
-
 export default function BrandPartners() {
   return (
     <section className="brand-partners-section">
@@ -10,16 +8,14 @@ export default function BrandPartners() {
       <div className="floating-element"></div>
       <div className="floating-element"></div>
 
-      <div className="container">
-        <div className="section-header">
-          <h2 className="section-title">Our Supporters</h2>
-        </div>
+      <div className="container w-100">
+        <div className="text-center" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true"><h1 className='text-white text-center fw-bold partner-category-title'>Our Supporters</h1></div>
 
         <div className="partners-container">
 
           <div className="other-partners-grid">
             {/* Venue Partner */}
-            <div className="partner-category">
+            <div className="partner-category" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" data-aos-delay="50">
               <div className="partner-card">
                 <Image
                   src={require("../assets/eximagies/qt=q_95.webp")}
@@ -32,7 +28,7 @@ export default function BrandPartners() {
             </div>
 
             {/* Photography Partner */}
-            <div className="partner-category">
+            <div className="partner-category" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" data-aos-delay="100">
               <div className="partner-card">
                 <Image
                   src={require("../assets/eximagies/SUPPORTER 01.jpg")}
@@ -45,7 +41,7 @@ export default function BrandPartners() {
             </div>
 
             {/* Associated Partner */}
-            <div className="partner-category">
+            <div className="partner-category" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" data-aos-delay="150">
               <div className="partner-card">
                 <Image
                   src={require("../assets/eximagies/SUPPORTER 03.jpg")}
@@ -58,7 +54,7 @@ export default function BrandPartners() {
             </div>
 
             {/* Digital Partner */}
-            <div className="partner-category">
+            <div className="partner-category" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" data-aos-delay="250">
               <div className="partner-card">
                 <Image
                   src={require("../assets/eximagies/SUPPORTER 02.jpg")}
@@ -72,14 +68,12 @@ export default function BrandPartners() {
           </div>
 
           {/* Other Partners Grid */}
-          <div className="section-header">
-            <h2 className="section-title">  Our Partners</h2>
-          </div>
+          <div className="text-center mt-5" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true"><h1 className='text-white text-center fw-bold partner-category-title'>Our Partners</h1></div>
           <div className="other-partners-grid">
             {/* Photography Partner */}
             <div className="partner-category">
-              <h3 className="partner-category-title">Photography Partner</h3>
-              <div className="partner-card">
+              <h3 className="partner-category-sub-title">Photography Partner</h3>
+              <div className="partner-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" data-aos-delay="50">
                 <Image
                   src={require("../assets/eximagies/Photography Partner-coy.jpg")}
                   alt="Photography Partner"
@@ -92,8 +86,8 @@ export default function BrandPartners() {
 
             {/* Associated Partner */}
             <div className="partner-category">
-              <h3 className="partner-category-title">Associated Partner</h3>
-              <div className="partner-card">
+              <h3 className="partner-category-sub-title">Associated Partner</h3>
+              <div className="partner-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" data-aos-delay="100">
                 <Image
                   src={require("../assets/eximagies/Associated With.jpg")}
                   alt="Associated Partner"
@@ -106,8 +100,8 @@ export default function BrandPartners() {
 
             {/* Digital Partner */}
             <div className="partner-category">
-              <h3 className="partner-category-title">Digital Partner</h3>
-              <div className="partner-card">
+              <h3 className="partner-category-sub-title">Digital Partner</h3>
+              <div className="partner-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" data-aos-delay="150">
                 <Image
                   src={require("../assets/eximagies/Digital Partner.jpg")}
                   alt="Digital Partner"
@@ -120,8 +114,8 @@ export default function BrandPartners() {
 
             {/* Venue Partner */}
             <div className="partner-category">
-              <h3 className="partner-category-title">Venue Partner</h3>
-              <div className="partner-card">
+              <h3 className="partner-category-sub-title">Venue Partner</h3>
+              <div className="partner-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" data-aos-delay="250">
                 <Image
                   src={require("../assets/eximagies/Venue Partner - Copy.jpg")}
                   alt="Venue Partner"
