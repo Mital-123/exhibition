@@ -5,7 +5,7 @@ function Schedule() {
     <>
       <section class="schedule overflow-hidden">
         <div class="container">
-          <div className="col-lg-10 mx-auto day-schedule">
+          <div className="col-lg-10 mx-auto day-schedule p-3 p-md-5">
             <div class="">
               <div className="day-header">
                 <div className="day-number">21</div>

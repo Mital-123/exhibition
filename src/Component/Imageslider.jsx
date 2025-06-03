@@ -7,7 +7,7 @@ function Imageslider() {
     { img: require("../assets/eximagies/slider (3).jpeg") ,objectfit:"cover"},
     { img: require("../assets/eximagies/slider (4).jpeg") ,objectfit:"cover"},
     { img: require("../assets/eximagies/slider (5).jpeg") ,objectfit:"cover"},
-    { img: require("../assets/eximagies/slider (6).jpeg") ,objectfit:"fill"},
+    { img: require("../assets/eximagies/slider (6).jpeg") ,objectfit:"cover"},
     { img: require("../assets/eximagies/slider (7).jpeg") ,objectfit:"cover"},
     { img: require("../assets/eximagies/slider (8).jpeg") ,objectfit:"cover"},
     { img: require("../assets/eximagies/slider (9).jpeg") ,objectfit:"cover"},

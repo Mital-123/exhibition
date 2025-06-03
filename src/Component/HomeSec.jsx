@@ -24,7 +24,7 @@ function HomeSec() {
           <h1 className=' text-white text-center fw-bold py-2  borderbtm'><span className='orangecolor'>Businessotsav</span> Exhibition 2025 🔊</h1>
         </div> */}
 
-        <div className="bglightbluecolor py-5 overflow-hidden">
+        <div className="bglightbluecolor py-3 py-lg-5 overflow-hidden">
           <div className="container bglightbluecolor ">
             <div className="row g-3 py-4 d-flex justify-content-center">
               <div className="col-12 px-4 px-lg-2 col-lg-3" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true" data-aos-delay="50">

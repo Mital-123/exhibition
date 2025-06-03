@@ -35,12 +35,13 @@ function StallBookingData() {
                     <thead className="table-dark">
                         <tr>
                             <th>Sr. No.</th>
-                            <th>Id</th>
                             <th>Name</th>
                             <th>E-mail</th>
                             <th>Phone No.</th>
                             <th>Business</th>
                             <th>Category</th>
+                            <th>Date</th>
+                            <th>Time</th>
                             <th>Stall</th>
                         </tr>
                     </thead>
@@ -48,14 +49,18 @@ function StallBookingData() {
                         {data.length > 0 ? (
                             data.map((item, index) => (
                                 <tr key={index} style={{ fontSize: "14px" }}>
+                                    {console.log(item)
+                                    }
                                     <td>{index + 1}</td>
-                                    <td>{item._id}</td>
                                     <td>{item.name}</td>
                                     <td>{item.email}</td>
                                     <td>{item.phnumber}</td>
                                     <td>{item.business}</td>
                                     <td>{item.category}</td>
+                                    <td>{new Date(item.createdAt).toLocaleDateString('en-GB')}</td>
+                                    <td>{new Date(item.createdAt).toLocaleTimeString()}</td>
                                     <td className='text-center'>{item.stall}</td>
+                                    
                                 </tr>
                             ))
                         ) : (
